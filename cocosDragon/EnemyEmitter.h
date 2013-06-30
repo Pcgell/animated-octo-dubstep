@@ -9,6 +9,11 @@
 #import "GameObject.h"
 
 @interface EnemyEmitter : GameObject
-    @property (nonatomic, assign) float Delay;
+{
+    CCNode* EnemyNode;
+    CCLayer* EnemyLayer;
+}
+@property (nonatomic, assign) float Delay;
+@property (nonatomic, assign) CCLayer* LevelLayer;
 
 @end
