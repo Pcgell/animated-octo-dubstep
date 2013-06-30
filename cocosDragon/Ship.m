@@ -43,7 +43,7 @@
     self.position = oldPosition;
     
     //Encontrar direcciones de misiles
-    CCNode* childShip;
+    /*CCNode* childShip;
     CCARRAY_FOREACH(self.children, childShip) {
         
         if (childShip.tag >= 64 && childShip.tag <= 66) {
@@ -56,7 +56,7 @@
     
     CCNode* projectile = [CCBReader nodeGraphFromFile:@"Projectile.ccbi"];
     projectile.position = self.position;
-    [self.parent addChild:projectile];
+    [self.parent addChild:projectile];*/
 
 }
 
