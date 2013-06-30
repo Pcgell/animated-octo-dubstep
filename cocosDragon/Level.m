@@ -61,9 +61,13 @@
               
                 if (ccpDistance(gameObject.position, ship.position) < gameObject.radius + ship.radius)
                 {
-                    // Notify the game objects that they have collided
-                    [gameObject handleCollisionWith:ship];
-                    [ship handleCollisionWith:gameObject];
+                    if (!ship.isDead) {
+                        // Notify the game objects that they have collided
+                        [gameObject handleCollisionWith:ship];
+                        [ship handleCollisionWith:gameObject];
+                        
+                        ship.isDead = true;
+                    }
                 }
             }
         }

@@ -9,12 +9,17 @@
 #import "Ship.h"
 #import "Enemy.h"
 #import "CCBReader.h"
+#import "GameScene.h"
+#import "CCBAnimationManager.h"
 
 #define SCREENHIGHT 768
 #define SCREENWIDTH 1024
 
 @implementation Ship
-
+- (id) init
+{
+    self.isDead = false;
+}
 
 - (void) update: (ccTime) delta {
     CGPoint oldPosition = self.position;
@@ -44,9 +49,24 @@
     {
         //self.isScheduledForRemove = YES;
         
+        
+        
+        CCBAnimationManager* animationManager = self.userObject;
+        
+        
+        [animationManager setCompletedAnimationCallbackBlock:^(id sender) {
+            [[GameScene sharedScene] handleGameOver];
+        }];
+        
+        NSLog(@"animationManager: %@", animationManager);
+        [animationManager runAnimationsForSequenceNamed:@"HideShip"];
+        
+        
         CCNode* explosion = [CCBReader nodeGraphFromFile:@"Explosion.ccbi"];
         explosion.position = self.position;
         [self.parent addChild:explosion];
+        
+
     }
 }
 

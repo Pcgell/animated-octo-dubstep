@@ -12,4 +12,6 @@
 {
     Ship* ship;
 }
+
+
 @end

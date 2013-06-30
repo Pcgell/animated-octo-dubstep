@@ -12,4 +12,5 @@
 
     @property (nonatomic, assign) float x;
     @property (nonatomic, assign) float y;
+    @property (nonatomic, assign) BOOL isDead;
 @end
