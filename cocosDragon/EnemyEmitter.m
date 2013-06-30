@@ -15,8 +15,6 @@
 @implementation EnemyEmitter
 - (void) update:(ccTime)delta
 {
-    self.EmisionCoolDown = 1;
-    
     if (self.Delay <= 0) {
         self.Delay = DELAY;
         float DICE = CCRANDOM_0_1() * 4.0;

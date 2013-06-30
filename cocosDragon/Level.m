@@ -10,6 +10,9 @@
 #import "Ship.h"
 #import "GameObject.h"
 #import "Enemy.h"
+#import "Projectile.h"
+#import "vec2.h"
+
 #define kCJScrollFilterFactor 0.1 
 #define kCJDragonTargetOffset 80
 
@@ -80,6 +83,22 @@
             Enemy* enemy = (Enemy*)child;
             enemy.targetX = ship.position.x;
             enemy.targetY = ship.position.y;
+        }
+        
+        
+        if([child isKindOfClass:[Projectile class]])
+        {
+            //Encontrar direcciones de misiles
+            CCNode* childShip;
+            CCARRAY_FOREACH(ship.children, childShip) {
+                
+                if (childShip.tag >= 64 && childShip.tag <= 66) {
+                    Projectile* misil = (Projectile*)childShip;
+                    
+                    misil.x = childShip.position.x - ship.position.x;
+                    misil.y = childShip.position.y - ship.position.y;
+                }
+            }
         }
     }
     //NSLog(@"dragon pos x:%f y:%f",dragon.position.x,dragon.position.y);

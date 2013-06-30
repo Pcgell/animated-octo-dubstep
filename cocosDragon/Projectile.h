@@ -1,5 +1,5 @@
 //
-//  EnemyEmitter.h
+//  Projectile.h
 //  cocosDragon
 //
 //  Created by Kenneth Vittetoe on 6/30/13.
@@ -7,12 +7,9 @@
 //
 
 #import "GameObject.h"
+#import "vec2.h"
 
-@interface EnemyEmitter : GameObject
-{
-    CCNode* EnemyNode;
-    CCLayer* EnemyLayer;
-}
-@property (nonatomic, assign) float Delay;
-
+@interface Projectile : GameObject
+@property (nonatomic, assign) float x;
+@property (nonatomic, assign) float y;
 @end

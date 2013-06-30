@@ -235,6 +235,7 @@
 		9FBE0FFD17272732005D6C25 /* Bomb.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0FFC17272731005D6C25 /* Bomb.m */; };
 		9FBE100017272809005D6C25 /* Explosion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE0FFF17272809005D6C25 /* Explosion.m */; };
 		9FBE10031727293A005D6C25 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE100217272939005D6C25 /* Level.m */; };
+		9FE95E2D1780B7DF00454C4D /* Projectile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE95E2C1780B7DF00454C4D /* Projectile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -650,6 +651,8 @@
 		9FBE0FFF17272809005D6C25 /* Explosion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Explosion.m; sourceTree = "<group>"; };
 		9FBE100117272939005D6C25 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		9FBE100217272939005D6C25 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
+		9FE95E2B1780B7DF00454C4D /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projectile.h; sourceTree = "<group>"; };
+		9FE95E2C1780B7DF00454C4D /* Projectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projectile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -749,6 +752,8 @@
 				9FBE100217272939005D6C25 /* Level.m */,
 				9F1BA64017800706000783B5 /* Enemy.h */,
 				9F1BA64117800707000783B5 /* Enemy.m */,
+				9FE95E2B1780B7DF00454C4D /* Projectile.h */,
+				9FE95E2C1780B7DF00454C4D /* Projectile.m */,
 				9F1BA69E17802923000783B5 /* EnemyEmitter.h */,
 				9F1BA69F17802923000783B5 /* EnemyEmitter.m */,
 				9FBE0BDC1726D6A3005D6C25 /* Resources */,
@@ -1604,6 +1609,7 @@
 				9F1BA63B177FEE65000783B5 /* Ship.m in Sources */,
 				9F1BA64217800707000783B5 /* Enemy.m in Sources */,
 				9F1BA6A017802923000783B5 /* EnemyEmitter.m in Sources */,
+				9FE95E2D1780B7DF00454C4D /* Projectile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
