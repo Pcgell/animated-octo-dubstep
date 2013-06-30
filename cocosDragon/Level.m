@@ -53,7 +53,10 @@
             GameObject* gameObject = (GameObject*)child;
             
             // Update all game objects
-            [gameObject update:delta];
+            if (!ship.isDead)
+                [gameObject update:delta];
+            else if(gameObject == ship)
+                [gameObject update:delta];
             
             // Check for collisions with dragon
             if (gameObject != ship)
