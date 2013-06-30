@@ -10,6 +10,7 @@
 #import "Enemy.h"
 #import "CCBReader.h"
 #import "GameScene.h"
+#import "Projectile.h"
 #import "CCBAnimationManager.h"
 
 #define SCREENHIGHT 768
@@ -40,6 +41,22 @@
         oldPosition.x = 0;
     
     self.position = oldPosition;
+    
+    //Encontrar direcciones de misiles
+    CCNode* childShip;
+    CCARRAY_FOREACH(self.children, childShip) {
+        
+        if (childShip.tag >= 64 && childShip.tag <= 66) {
+            //Projectile* misil = new Projectile;
+            
+            //misil.x = childShip.position.x - self.position.x;
+            //misil.y = childShip.position.y - self.position.y;
+        }
+    }
+    
+    CCNode* projectile = [CCBReader nodeGraphFromFile:@"Projectile.ccbi"];
+    projectile.position = self.position;
+    [self.parent addChild:projectile];
 
 }
 
@@ -49,10 +66,7 @@
     {
         //self.isScheduledForRemove = YES;
         
-        
-        
         CCBAnimationManager* animationManager = self.userObject;
-        
         
         [animationManager setCompletedAnimationCallbackBlock:^(id sender) {
             [[GameScene sharedScene] handleGameOver];
@@ -65,7 +79,6 @@
         CCNode* explosion = [CCBReader nodeGraphFromFile:@"Explosion.ccbi"];
         explosion.position = self.position;
         [self.parent addChild:explosion];
-        
 
     }
 }

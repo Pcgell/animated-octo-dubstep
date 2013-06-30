@@ -32,10 +32,10 @@ static GameScene* _sharedScene;
 }
 -(void) handleGameOver
 {
-    [[CCDirector sharedDirector] replaceScene:[CCBReader sceneWithNodeGraphFromFile:@"NMainMenuScene.ccbi"]];
+    [[CCDirector sharedDirector] replaceScene:[CCBReader sceneWithNodeGraphFromFile:@"CreditScene.ccbi"]];
 }
 -(void)handleLevelCompete
 {
-    [[CCDirector sharedDirector] replaceScene:[CCBReader sceneWithNodeGraphFromFile:@"NMainMenuScene.ccbi"]];
+    [[CCDirector sharedDirector] replaceScene:[CCBReader sceneWithNodeGraphFromFile:@"CreditScene.ccbi"]];
 }
 @end
