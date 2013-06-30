@@ -74,7 +74,7 @@
     
     
     // Load the main menu scene from the ccbi-file
-    CCScene* mainScene = [CCBReader sceneWithNodeGraphFromFile:@"MainMenuScene.ccbi"];
+    CCScene* mainScene = [CCBReader sceneWithNodeGraphFromFile:@"NMainMenuScene.ccbi"];
     // Users/kenneth/Desktop/skydrive/projects/cocosDragon/cocosDragon/Resources/MainMenuScene.ccb
     
     
@@ -99,7 +99,7 @@
 // Supported orientations: Landscape. Customize it for your own needs
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+	return interfaceOrientation == UIInterfaceOrientationLandscapeLeft;
 }
 
 

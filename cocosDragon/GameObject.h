@@ -15,7 +15,7 @@
 @property (nonatomic,assign) BOOL isScheduledForRemove;
 @property (nonatomic,readonly) float radius;
 
-- (void) update;
+- (void) update: (ccTime) delta;
 
 - (void) handleCollisionWith:(GameObject*)gameObject;
 @end

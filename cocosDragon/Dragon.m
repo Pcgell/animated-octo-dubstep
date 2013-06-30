@@ -34,12 +34,12 @@
     
     return self;
 }
-- (void) update
+- (void) update: (ccTime) delta
 {
     // Calculate new position
     CGPoint oldPosition = self.position;
     
-    float xNew = xTarget * kCJTargetFilterFactor + oldPosition.x * (1-kCJTargetFilterFactor);
+    float xNew = xTarget + oldPosition.x; //xTarget * kCJTargetFilterFactor + oldPosition.x * (1-kCJTargetFilterFactor);
     float yNew = oldPosition.y + ySpeed;
     self.position = ccp(xNew,yNew);
     

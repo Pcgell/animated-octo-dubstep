@@ -7,8 +7,9 @@
 //
 
 #import "Level.h"
-#import "Dragon.h"
+#import "Ship.h"
 #import "GameObject.h"
+#import "Enemy.h"
 #define kCJScrollFilterFactor 0.1 
 #define kCJDragonTargetOffset 80
 
@@ -16,6 +17,7 @@
 - (void) onEnter
 {
     [super onEnter];
+    self.isAccelerometerEnabled = YES;
     
     // Schedule a selector that is called every frame
     [self schedule:@selector(update:)];
@@ -25,9 +27,9 @@
     CCNode* child;
     CCARRAY_FOREACH(self.children, child)
     {
-        if ([child isKindOfClass:[Dragon class]])
+        if ([child isKindOfClass:[Ship class]])
         {
-            dragon = (Dragon*)child;
+            ship = (Ship*)child;
         }
     }
 }
@@ -51,19 +53,26 @@
             GameObject* gameObject = (GameObject*)child;
             
             // Update all game objects
-            [gameObject update];
+            [gameObject update:delta];
             
             // Check for collisions with dragon
-            if (gameObject != dragon)
+            if (gameObject != ship)
             {
                 
-                if (ccpDistance(gameObject.position, dragon.position) < gameObject.radius + dragon.radius)
+                if (ccpDistance(gameObject.position, ship.position) < gameObject.radius + ship.radius)
                 {
                     // Notify the game objects that they have collided
-                    [gameObject handleCollisionWith:dragon];
-                    [dragon handleCollisionWith:gameObject];
+                    [gameObject handleCollisionWith:ship];
+                    [ship handleCollisionWith:gameObject];
                 }
             }
+        }
+        
+        if([child isKindOfClass:[Enemy class]])
+        {
+            Enemy* enemy = (Enemy*)child;
+            enemy.targetX = ship.position.x;
+            enemy.targetY = ship.position.y;
         }
     }
     //NSLog(@"dragon pos x:%f y:%f",dragon.position.x,dragon.position.y);
@@ -86,29 +95,29 @@
     {
         [self removeChild:gameObject cleanup:YES];
     }
-    
-    // Adjust the position of the layer so dragon is visible
-    float yTarget = kCJDragonTargetOffset - dragon.position.y;
-    CGPoint oldLayerPosition = self.position;
-    
-    float xNew = oldLayerPosition.x;
-    float yNew = yTarget * kCJScrollFilterFactor + oldLayerPosition.y * (1.0f - kCJScrollFilterFactor);
-    
-    self.position = ccp(xNew, yNew);
 }
+
+
 - (void) ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch* touch = [touches anyObject];
     CGPoint touchLocation = [touch locationInView: [touch view]];
-    
-    dragon.xTarget = touchLocation.x;
+    //ship.xTarget = touchLocation.x;
 }
 
 - (void) ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch* touch = [touches anyObject];
     CGPoint touchLocation = [touch locationInView: [touch view]];
-    
-    dragon.xTarget = touchLocation.x;
+    //ship.xTarget = touchLocation.x;
 }
+
+-(void) accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
+{
+    ship.x = 15 * acceleration.y;
+    ship.y = 15 * -acceleration.x;
+    NSLog(@"%f",acceleration.x);
+}
+
+
 @end

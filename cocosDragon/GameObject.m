@@ -12,8 +12,10 @@
 @synthesize isScheduledForRemove;
 
 // Update is called for every game object once every frame
-- (void) update
-{}
+- (void) update: (ccTime) delta
+{
+    
+}
 
 // If this game object has collided with another game object this method is called
 - (void) handleCollisionWith:(GameObject *)gameObject
