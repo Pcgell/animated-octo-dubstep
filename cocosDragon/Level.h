@@ -11,7 +11,6 @@
 @interface Level : CCLayer
 {
     Ship* ship;
-    float seconds;
 }
 
 

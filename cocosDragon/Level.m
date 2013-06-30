@@ -9,7 +9,6 @@
 #import "Level.h"
 #import "Ship.h"
 #import "GameObject.h"
-#import "GameScene.h"
 #import "Enemy.h"
 #import "Projectile.h"
 #import "vec2.h"
@@ -22,7 +21,6 @@
 {
     [super onEnter];
     self.isAccelerometerEnabled = YES;
-    seconds = 4.0;
     
     // Schedule a selector that is called every frame
     [self schedule:@selector(update:)];
@@ -60,10 +58,8 @@
             // Update all game objects
             if (!ship.isDead)
                 [gameObject update:delta];
-            else if(gameObject == ship){
+            else if(gameObject == ship)
                 [gameObject update:delta];
-                seconds -= delta;
-            }
             
             // Check for collisions with dragon
             if (gameObject != ship)
@@ -115,10 +111,6 @@
     {
         [self removeChild:gameObject cleanup:YES];
     }
-    if (seconds < 0) {
-        //go to credits!!
-        [[GameScene sharedScene] handleGameOver];
-    }
 }
 
 
@@ -140,7 +132,7 @@
 {
     ship.x = 15 * acceleration.y;
     ship.y = 15 * -acceleration.x;
-    //NSLog(@"%f",acceleration.x);
+    NSLog(@"%f",acceleration.x);
 }
 
 
