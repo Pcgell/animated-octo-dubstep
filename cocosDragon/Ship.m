@@ -7,6 +7,9 @@
 //
 
 #import "Ship.h"
+#import "Enemy.h"
+#import "CCBReader.h"
+
 #define SCREENHIGHT 768
 #define SCREENWIDTH 1024
 
@@ -33,5 +36,22 @@
     
     self.position = oldPosition;
 
+}
+
+- (void) handleCollisionWith:(GameObject *)gameObject
+{
+    if ([gameObject isKindOfClass:[Enemy class]])
+    {
+        //self.isScheduledForRemove = YES;
+        
+        CCNode* explosion = [CCBReader nodeGraphFromFile:@"Explosion.ccbi"];
+        explosion.position = self.position;
+        [self.parent addChild:explosion];
+    }
+}
+
+- (float) radius
+{
+    return 25;
 }
 @end

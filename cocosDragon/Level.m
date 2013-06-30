@@ -58,7 +58,7 @@
             // Check for collisions with dragon
             if (gameObject != ship)
             {
-                
+              
                 if (ccpDistance(gameObject.position, ship.position) < gameObject.radius + ship.radius)
                 {
                     // Notify the game objects that they have collided

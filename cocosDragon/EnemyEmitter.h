@@ -14,6 +14,6 @@
     CCLayer* EnemyLayer;
 }
 @property (nonatomic, assign) float Delay;
-@property (nonatomic, assign) CCLayer* LevelLayer;
+@property (nonatomic, assign) float EmisionCoolDown;
 
 @end

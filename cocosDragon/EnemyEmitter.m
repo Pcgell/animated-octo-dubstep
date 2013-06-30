@@ -9,39 +9,36 @@
 #import "EnemyEmitter.h"
 #import "CCBReader.h"
 #import "Level.h"
+#define DELAY 2
+#define MAXITEMS 200
 
 @implementation EnemyEmitter
 - (void) update:(ccTime)delta
 {
+    self.EmisionCoolDown = 1;
+    
     if (self.Delay <= 0) {
+        self.Delay = DELAY;
         float DICE = CCRANDOM_0_1() * 4.0;
     
         if (DICE > 3){
-            //EMIT ENEMY
             id el = self.parent;
             
             while (![el isKindOfClass:[ Level class]]) {
                 el = self.parent;
         
             }
-            /*CCNode* explosion = [CCBReader nodeGraphFromFile:@"Explosion.ccbi"];
-            explosion.position = self.position;
-            [self.parent addChild:explosion];*/
             
             EnemyLayer = el;
             
-            CCNode* enemy = [CCBReader nodeGraphFromFile:@"Enemy.ccbi"];
-            enemy.position = self.position;
-            [EnemyLayer addChild:enemy];
-            
-            NSLog(@"%i", EnemyNode.tag);
-            
+            if (EnemyLayer.children.count < 200) {
+                CCNode* enemy = [CCBReader nodeGraphFromFile:@"Enemy.ccbi"];
+                enemy.position = self.position;
+                [EnemyLayer addChild:enemy];
+            }
         }
-        
-        self.Delay = CCRANDOM_0_1() * 3.0;
     }
-    
-    self.Delay -= delta;
 
+    self.Delay -= delta;
 }
 @end

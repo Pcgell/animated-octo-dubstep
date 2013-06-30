@@ -9,7 +9,7 @@
 #import "Enemy.h"
 #import "vec2.h"
 #import "math.h"
-
+#import "Ship.h"
 
 @implementation Enemy
 - (void) update: (ccTime) delta {
@@ -28,5 +28,18 @@
     oldPosition.y += 200 * delta * result.y;
     oldPosition.x += 200 * delta * result.x;
     self.position = CGPointMake(oldPosition.x, oldPosition.y);
+}
+
+- (void) handleCollisionWith:(GameObject *)gameObject
+{
+    if ([gameObject isKindOfClass:[Ship class]])
+    {
+        self.isScheduledForRemove = YES;
+    }
+}
+
+- (float) radius
+{
+    return 15;
 }
 @end
