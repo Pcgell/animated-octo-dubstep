@@ -13,7 +13,7 @@
 
 @implementation Enemy
 - (void) update: (ccTime) delta {
-    kmVec2 up; kmVec2Fill(&up, 0, -1);
+    kmVec2 up; kmVec2Fill(&up, 0, 1);
     kmVec2 oldPosition;
     oldPosition.x= self.position.x;
     oldPosition.y = self.position.y;
@@ -24,7 +24,7 @@
     kmVec2Normalize(&result,&dir);
     float dot =  kmVec2Dot(&result, &up);
     float theta = acosf(dot)*180/M_PI;
-    self.rotation =  -theta;
+    self.rotation = theta;
     oldPosition.y += 200 * delta * result.y;
     oldPosition.x += 200 * delta * result.x;
     self.position = CGPointMake(oldPosition.x, oldPosition.y);
