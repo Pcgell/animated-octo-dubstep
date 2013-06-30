@@ -23,6 +23,7 @@
 		9F1BA674178025F7000783B5 /* Hero-Final-pixeleado.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA646178025F7000783B5 /* Hero-Final-pixeleado.png */; };
 		9F1BA675178025F7000783B5 /* rotador.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA647178025F7000783B5 /* rotador.png */; };
 		9F1BA6A017802923000783B5 /* EnemyEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BA69F17802923000783B5 /* EnemyEmitter.m */; };
+		9F3318A617807899002B1315 /* EnemyEmitter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318A517807899002B1315 /* EnemyEmitter.ccbi */; };
 		9F81B45517273A71006F5270 /* Bomb.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44D17273A71006F5270 /* Bomb.ccb */; };
 		9F81B45617273A71006F5270 /* Coin.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44E17273A71006F5270 /* Coin.ccb */; };
 		9F81B45717273A71006F5270 /* Dragon.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44F17273A71006F5270 /* Dragon.ccb */; };
@@ -253,6 +254,7 @@
 		9F1BA647178025F7000783B5 /* rotador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotador.png; sourceTree = "<group>"; };
 		9F1BA69E17802923000783B5 /* EnemyEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyEmitter.h; sourceTree = "<group>"; };
 		9F1BA69F17802923000783B5 /* EnemyEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyEmitter.m; sourceTree = "<group>"; };
+		9F3318A517807899002B1315 /* EnemyEmitter.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = EnemyEmitter.ccbi; path = Resources/EnemyEmitter.ccbi; sourceTree = "<group>"; };
 		9F81B44D17273A71006F5270 /* Bomb.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Bomb.ccb; path = Resources/Bomb.ccb; sourceTree = "<group>"; };
 		9F81B44E17273A71006F5270 /* Coin.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Coin.ccb; path = Resources/Coin.ccb; sourceTree = "<group>"; };
 		9F81B44F17273A71006F5270 /* Dragon.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Dragon.ccb; path = Resources/Dragon.ccb; sourceTree = "<group>"; };
@@ -749,6 +751,7 @@
 		9FBE0BDC1726D6A3005D6C25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F3318A517807899002B1315 /* EnemyEmitter.ccbi */,
 				9F1BA643178025F7000783B5 /* Imagenes */,
 				9F1BA63E178006ED000783B5 /* Enemy.ccbi */,
 				9F1BA63C177FFA1A000783B5 /* Ship.ccbi */,
@@ -1422,6 +1425,7 @@
 				9F1BA673178025F7000783B5 /* enemigo3.png in Resources */,
 				9F1BA674178025F7000783B5 /* Hero-Final-pixeleado.png in Resources */,
 				9F1BA675178025F7000783B5 /* rotador.png in Resources */,
+				9F3318A617807899002B1315 /* EnemyEmitter.ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
