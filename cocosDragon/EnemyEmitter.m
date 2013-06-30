@@ -18,8 +18,8 @@
         if (DICE > 5){
             //EMIT ENEMY
             CCLayer* Layer = (CCLayer*) self.parent;
-            CCBReader* reader
-            [Layer addChild:[CCBReader  sceneWithNodeGraphFromFile:@"Enemy.ccbi"]];
+            CCBReader* reader;
+            //[Layer addChild:[CCBReader  sceneWithNodeGraphFromFile:@"Enemy.ccbi"]];
             
         }
         
