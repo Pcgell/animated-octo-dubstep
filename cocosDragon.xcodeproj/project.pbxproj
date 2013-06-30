@@ -24,6 +24,11 @@
 		9F1BA675178025F7000783B5 /* rotador.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA647178025F7000783B5 /* rotador.png */; };
 		9F1BA6A017802923000783B5 /* EnemyEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BA69F17802923000783B5 /* EnemyEmitter.m */; };
 		9F3318A617807899002B1315 /* EnemyEmitter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318A517807899002B1315 /* EnemyEmitter.ccbi */; };
+		9F3318A81780B3D0002B1315 /* Projectile.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318A71780B3D0002B1315 /* Projectile.ccbi */; };
+		9F3318AD1780B3EE002B1315 /* shipPart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318A91780B3ED002B1315 /* shipPart.png */; };
+		9F3318AE1780B3EE002B1315 /* shipPart2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318AA1780B3EE002B1315 /* shipPart2.png */; };
+		9F3318AF1780B3EE002B1315 /* wingOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318AB1780B3EE002B1315 /* wingOne.png */; };
+		9F3318B01780B3EE002B1315 /* WingTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3318AC1780B3EE002B1315 /* WingTwo.png */; };
 		9F81B45517273A71006F5270 /* Bomb.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44D17273A71006F5270 /* Bomb.ccb */; };
 		9F81B45617273A71006F5270 /* Coin.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44E17273A71006F5270 /* Coin.ccb */; };
 		9F81B45717273A71006F5270 /* Dragon.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44F17273A71006F5270 /* Dragon.ccb */; };
@@ -255,6 +260,11 @@
 		9F1BA69E17802923000783B5 /* EnemyEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyEmitter.h; sourceTree = "<group>"; };
 		9F1BA69F17802923000783B5 /* EnemyEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyEmitter.m; sourceTree = "<group>"; };
 		9F3318A517807899002B1315 /* EnemyEmitter.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = EnemyEmitter.ccbi; path = Resources/EnemyEmitter.ccbi; sourceTree = "<group>"; };
+		9F3318A71780B3D0002B1315 /* Projectile.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Projectile.ccbi; path = Resources/Projectile.ccbi; sourceTree = "<group>"; };
+		9F3318A91780B3ED002B1315 /* shipPart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shipPart.png; path = Resources/Imagenes/shipPart.png; sourceTree = "<group>"; };
+		9F3318AA1780B3EE002B1315 /* shipPart2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shipPart2.png; path = Resources/Imagenes/shipPart2.png; sourceTree = "<group>"; };
+		9F3318AB1780B3EE002B1315 /* wingOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wingOne.png; path = Resources/Imagenes/wingOne.png; sourceTree = "<group>"; };
+		9F3318AC1780B3EE002B1315 /* WingTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WingTwo.png; path = Resources/Imagenes/WingTwo.png; sourceTree = "<group>"; };
 		9F81B44D17273A71006F5270 /* Bomb.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Bomb.ccb; path = Resources/Bomb.ccb; sourceTree = "<group>"; };
 		9F81B44E17273A71006F5270 /* Coin.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Coin.ccb; path = Resources/Coin.ccb; sourceTree = "<group>"; };
 		9F81B44F17273A71006F5270 /* Dragon.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Dragon.ccb; path = Resources/Dragon.ccb; sourceTree = "<group>"; };
@@ -751,6 +761,11 @@
 		9FBE0BDC1726D6A3005D6C25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F3318A91780B3ED002B1315 /* shipPart.png */,
+				9F3318AA1780B3EE002B1315 /* shipPart2.png */,
+				9F3318AB1780B3EE002B1315 /* wingOne.png */,
+				9F3318AC1780B3EE002B1315 /* WingTwo.png */,
+				9F3318A71780B3D0002B1315 /* Projectile.ccbi */,
 				9F3318A517807899002B1315 /* EnemyEmitter.ccbi */,
 				9F1BA643178025F7000783B5 /* Imagenes */,
 				9F1BA63E178006ED000783B5 /* Enemy.ccbi */,
@@ -1426,6 +1441,11 @@
 				9F1BA674178025F7000783B5 /* Hero-Final-pixeleado.png in Resources */,
 				9F1BA675178025F7000783B5 /* rotador.png in Resources */,
 				9F3318A617807899002B1315 /* EnemyEmitter.ccbi in Resources */,
+				9F3318A81780B3D0002B1315 /* Projectile.ccbi in Resources */,
+				9F3318AD1780B3EE002B1315 /* shipPart.png in Resources */,
+				9F3318AE1780B3EE002B1315 /* shipPart2.png in Resources */,
+				9F3318AF1780B3EE002B1315 /* wingOne.png in Resources */,
+				9F3318B01780B3EE002B1315 /* WingTwo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>fileType</key>
 	<string>CocosBuilder</string>
 	<key>fileVersion</key>
@@ -196,7 +196,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -456,8 +456,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-1</real>
-							<real>95</real>
+							<real>0.0</real>
+							<real>0.0</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -493,7 +493,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>120</real>
+						<real>359</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -703,8 +703,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>132</real>
-							<real>-66</real>
+							<real>0.0</real>
+							<real>0.0</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -740,7 +740,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>0.0</real>
+						<real>479</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -950,8 +950,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-154</real>
-							<real>-114</real>
+							<real>0.0</real>
+							<real>0.0</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -987,7 +987,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-90</real>
+						<real>240</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1187,13 +1187,13 @@
 				<array>
 					<dict>
 						<key>baseValue</key>
-						<integer>1</integer>
+						<false/>
 						<key>name</key>
 						<string>visible</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>baseValue</key>
@@ -1207,8 +1207,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-180</real>
-							<real>73</real>
+							<real>-4</real>
+							<real>-1</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1244,7 +1244,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>360</real>
+						<real>0.0</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1436,13 +1436,13 @@
 				<array>
 					<dict>
 						<key>baseValue</key>
-						<integer>1</integer>
+						<false/>
 						<key>name</key>
 						<string>visible</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>baseValue</key>
@@ -1456,8 +1456,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-24</real>
-							<real>-72</real>
+							<real>5</real>
+							<real>5</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1493,7 +1493,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-360</real>
+						<real>0.0</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1667,13 +1667,13 @@
 				<array>
 					<dict>
 						<key>baseValue</key>
-						<integer>1</integer>
+						<false/>
 						<key>name</key>
 						<string>visible</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>baseValue</key>
@@ -1687,8 +1687,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>58</real>
-							<real>128</real>
+							<real>-4</real>
+							<real>1</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1724,7 +1724,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>320</real>
+						<real>0.0</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1916,13 +1916,13 @@
 				<array>
 					<dict>
 						<key>baseValue</key>
-						<integer>1</integer>
+						<false/>
 						<key>name</key>
 						<string>visible</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>baseValue</key>
@@ -1936,8 +1936,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-112</real>
-							<real>-147</real>
+							<real>-11</real>
+							<real>6</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1973,7 +1973,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-320</real>
+						<real>0.0</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2165,13 +2165,13 @@
 				<array>
 					<dict>
 						<key>baseValue</key>
-						<integer>1</integer>
+						<false/>
 						<key>name</key>
 						<string>visible</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>baseValue</key>
@@ -2185,8 +2185,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>107</real>
-							<real>-36</real>
+							<real>30</real>
+							<real>21</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -2222,7 +2222,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>630</real>
+						<real>90</real>
 					</dict>
 					<dict>
 						<key>name</key>
