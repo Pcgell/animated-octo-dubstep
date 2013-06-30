@@ -18,6 +18,11 @@
 		9F1BA63D177FFA1A000783B5 /* Ship.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA63C177FFA1A000783B5 /* Ship.ccbi */; };
 		9F1BA63F178006ED000783B5 /* Enemy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA63E178006ED000783B5 /* Enemy.ccbi */; };
 		9F1BA64217800707000783B5 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BA64117800707000783B5 /* Enemy.m */; };
+		9F1BA672178025F7000783B5 /* burbuja.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA644178025F7000783B5 /* burbuja.png */; };
+		9F1BA673178025F7000783B5 /* enemigo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA645178025F7000783B5 /* enemigo3.png */; };
+		9F1BA674178025F7000783B5 /* Hero-Final-pixeleado.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA646178025F7000783B5 /* Hero-Final-pixeleado.png */; };
+		9F1BA675178025F7000783B5 /* rotador.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1BA647178025F7000783B5 /* rotador.png */; };
+		9F1BA6A017802923000783B5 /* EnemyEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BA69F17802923000783B5 /* EnemyEmitter.m */; };
 		9F81B45517273A71006F5270 /* Bomb.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44D17273A71006F5270 /* Bomb.ccb */; };
 		9F81B45617273A71006F5270 /* Coin.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44E17273A71006F5270 /* Coin.ccb */; };
 		9F81B45717273A71006F5270 /* Dragon.ccb in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B44F17273A71006F5270 /* Dragon.ccb */; };
@@ -172,7 +177,6 @@
 		9FBE0D861726D81B005D6C25 /* gameobjects-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D7A1726D81B005D6C25 /* gameobjects-hd.png */; };
 		9FBE0D871726D81B005D6C25 /* gameobjects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D7B1726D81B005D6C25 /* gameobjects.plist */; };
 		9FBE0D881726D81B005D6C25 /* gameobjects.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D7C1726D81B005D6C25 /* gameobjects.png */; };
-		9FBE0D891726D81B005D6C25 /* logo-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D7D1726D81B005D6C25 /* logo-hd.png */; };
 		9FBE0D8A1726D81B005D6C25 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D7E1726D81B005D6C25 /* logo.png */; };
 		9FBE0D8B1726D81B005D6C25 /* play-button-down-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D7F1726D81B005D6C25 /* play-button-down-hd.png */; };
 		9FBE0D8C1726D81B005D6C25 /* play-button-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE0D801726D81B005D6C25 /* play-button-down.png */; };
@@ -243,6 +247,12 @@
 		9F1BA63E178006ED000783B5 /* Enemy.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Enemy.ccbi; path = Resources/Enemy.ccbi; sourceTree = "<group>"; };
 		9F1BA64017800706000783B5 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		9F1BA64117800707000783B5 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		9F1BA644178025F7000783B5 /* burbuja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burbuja.png; sourceTree = "<group>"; };
+		9F1BA645178025F7000783B5 /* enemigo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemigo3.png; sourceTree = "<group>"; };
+		9F1BA646178025F7000783B5 /* Hero-Final-pixeleado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hero-Final-pixeleado.png"; sourceTree = "<group>"; };
+		9F1BA647178025F7000783B5 /* rotador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotador.png; sourceTree = "<group>"; };
+		9F1BA69E17802923000783B5 /* EnemyEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyEmitter.h; sourceTree = "<group>"; };
+		9F1BA69F17802923000783B5 /* EnemyEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyEmitter.m; sourceTree = "<group>"; };
 		9F81B44D17273A71006F5270 /* Bomb.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Bomb.ccb; path = Resources/Bomb.ccb; sourceTree = "<group>"; };
 		9F81B44E17273A71006F5270 /* Coin.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Coin.ccb; path = Resources/Coin.ccb; sourceTree = "<group>"; };
 		9F81B44F17273A71006F5270 /* Dragon.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Dragon.ccb; path = Resources/Dragon.ccb; sourceTree = "<group>"; };
@@ -542,7 +552,6 @@
 		9FBE0D7A1726D81B005D6C25 /* gameobjects-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameobjects-hd.png"; path = "Resources/gameobjects-hd.png"; sourceTree = "<group>"; };
 		9FBE0D7B1726D81B005D6C25 /* gameobjects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameobjects.plist; path = Resources/gameobjects.plist; sourceTree = "<group>"; };
 		9FBE0D7C1726D81B005D6C25 /* gameobjects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gameobjects.png; path = Resources/gameobjects.png; sourceTree = "<group>"; };
-		9FBE0D7D1726D81B005D6C25 /* logo-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-hd.png"; path = "Resources/logo-hd.png"; sourceTree = "<group>"; };
 		9FBE0D7E1726D81B005D6C25 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
 		9FBE0D7F1726D81B005D6C25 /* play-button-down-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play-button-down-hd.png"; path = "Resources/play-button-down-hd.png"; sourceTree = "<group>"; };
 		9FBE0D801726D81B005D6C25 /* play-button-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play-button-down.png"; path = "Resources/play-button-down.png"; sourceTree = "<group>"; };
@@ -651,6 +660,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F1BA643178025F7000783B5 /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				9F1BA644178025F7000783B5 /* burbuja.png */,
+				9F1BA645178025F7000783B5 /* enemigo3.png */,
+				9F1BA646178025F7000783B5 /* Hero-Final-pixeleado.png */,
+				9F1BA647178025F7000783B5 /* rotador.png */,
+			);
+			name = Imagenes;
+			path = Resources/Imagenes;
+			sourceTree = "<group>";
+		};
 		9FBE0BBD1726D6A3005D6C25 = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +737,8 @@
 				9FBE100217272939005D6C25 /* Level.m */,
 				9F1BA64017800706000783B5 /* Enemy.h */,
 				9F1BA64117800707000783B5 /* Enemy.m */,
+				9F1BA69E17802923000783B5 /* EnemyEmitter.h */,
+				9F1BA69F17802923000783B5 /* EnemyEmitter.m */,
 				9FBE0BDC1726D6A3005D6C25 /* Resources */,
 				9FBE0BF41726D6A3005D6C25 /* libs */,
 				9FBE0D651726D6A6005D6C25 /* Supporting Files */,
@@ -726,6 +749,7 @@
 		9FBE0BDC1726D6A3005D6C25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F1BA643178025F7000783B5 /* Imagenes */,
 				9F1BA63E178006ED000783B5 /* Enemy.ccbi */,
 				9F1BA63C177FFA1A000783B5 /* Ship.ccbi */,
 				9F1BA633177FE28B000783B5 /* enemigo-front.png */,
@@ -758,7 +782,6 @@
 				9FBE0D7A1726D81B005D6C25 /* gameobjects-hd.png */,
 				9FBE0D7B1726D81B005D6C25 /* gameobjects.plist */,
 				9FBE0D7C1726D81B005D6C25 /* gameobjects.png */,
-				9FBE0D7D1726D81B005D6C25 /* logo-hd.png */,
 				9FBE0D7E1726D81B005D6C25 /* logo.png */,
 				9FBE0D7F1726D81B005D6C25 /* play-button-down-hd.png */,
 				9FBE0D801726D81B005D6C25 /* play-button-down.png */,
@@ -1352,7 +1375,6 @@
 				9FBE0D861726D81B005D6C25 /* gameobjects-hd.png in Resources */,
 				9FBE0D871726D81B005D6C25 /* gameobjects.plist in Resources */,
 				9FBE0D881726D81B005D6C25 /* gameobjects.png in Resources */,
-				9FBE0D891726D81B005D6C25 /* logo-hd.png in Resources */,
 				9FBE0D8A1726D81B005D6C25 /* logo.png in Resources */,
 				9FBE0D8B1726D81B005D6C25 /* play-button-down-hd.png in Resources */,
 				9FBE0D8C1726D81B005D6C25 /* play-button-down.png in Resources */,
@@ -1396,6 +1418,10 @@
 				9F1BA638177FE28C000783B5 /* Logo-Dubsteroids.png in Resources */,
 				9F1BA63D177FFA1A000783B5 /* Ship.ccbi in Resources */,
 				9F1BA63F178006ED000783B5 /* Enemy.ccbi in Resources */,
+				9F1BA672178025F7000783B5 /* burbuja.png in Resources */,
+				9F1BA673178025F7000783B5 /* enemigo3.png in Resources */,
+				9F1BA674178025F7000783B5 /* Hero-Final-pixeleado.png in Resources */,
+				9F1BA675178025F7000783B5 /* rotador.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1553,6 +1579,7 @@
 				9F1BA62E177FCEC6000783B5 /* CreditScene.m in Sources */,
 				9F1BA63B177FEE65000783B5 /* Ship.m in Sources */,
 				9F1BA64217800707000783B5 /* Enemy.m in Sources */,
+				9F1BA6A017802923000783B5 /* EnemyEmitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
