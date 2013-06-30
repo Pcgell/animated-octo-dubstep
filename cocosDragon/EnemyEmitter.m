@@ -22,6 +22,7 @@
         float DICE = CCRANDOM_0_1() * 4.0;
     
         if (DICE > 3){
+            //EMIT ENEMY
             id el = self.parent;
             
             while (![el isKindOfClass:[ Level class]]) {
