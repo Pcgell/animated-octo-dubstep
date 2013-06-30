@@ -13,7 +13,7 @@
 
 @implementation Enemy
 - (void) update: (ccTime) delta {
-    kmVec2 up; kmVec2Fill(&up, 0, -1);
+    kmVec2 up; kmVec2Fill(&up, 0, 1);
     kmVec2 oldPosition;
     oldPosition.x= self.position.x;
     oldPosition.y = self.position.y;
